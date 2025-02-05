@@ -42,16 +42,7 @@
   overflow: hidden;
 }
 
-/* Table Headers */
-.details-table th {
-  padding: 10px;
-  background-color: #333;
-  text-align: left;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-}
-
-/* Table Data Cells */
+.details-table th,
 .details-table td {
   padding: 10px;
   text-align: left;
@@ -77,35 +68,42 @@ button:hover {
 
 /* Make the page and table responsive */
 @media (max-width: 768px) {
+  /* Make the table scrollable horizontally on mobile screens */
   .details-table {
-      font-size: 0.9rem;
-  }
-
-  .header {
-      font-size: 1.5rem;
+    display: block; /* Enables horizontal scrolling */
+    overflow-x: auto; /* Horizontal scroll if the content is too wide */
+    white-space: nowrap; /* Prevents the table from wrapping */
   }
 
   .details-table th,
   .details-table td {
-      padding: 8px;
+    padding: 8px 5px; /* Adjust padding for better fit */
   }
 
+  /* Adjust header size */
+  .header {
+    font-size: 1.5rem;
+  }
+
+  /* Make buttons slightly smaller */
   button {
-      padding: 8px 15px;
+    padding: 8px 15px;
   }
 }
 
 @media (max-width: 480px) {
+  /* Even smaller adjustments for very small screens */
   .header {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .details-table th,
   .details-table td {
-      padding: 6px;
+    padding: 6px 4px; /* Smaller padding for small screens */
+    font-size: 0.8rem; /* Further reduce font size */
   }
 
   button {
-      padding: 6px 12px;
+    padding: 6px 12px;
   }
 }

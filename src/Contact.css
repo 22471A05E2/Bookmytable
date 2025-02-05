@@ -1,28 +1,30 @@
 .contact-form-container {
   background: black;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh; /* Prevents cutting at bottom */
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-start; /* Align content at the top */
-  padding: 20px; /* Add spacing around the container */
-  padding-top: 80px; /* Add space for the navbar */
-  box-sizing: border-box; /* Include padding in height and width calculations */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  padding-top: 90px; /* Reduced to move form up */
+  box-sizing: border-box;
 }
 
 .contact-form-wrapper {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 30px;
   border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for better visibility */
+  width: min(90%, 400px);
+  margin: 0 auto;
+  margin-top: 10px; /* Adjusted margin to move up */
+  margin-bottom: 20px; /* Added margin to avoid bottom cutting */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form-wrapper h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 24px; /* Responsive font size */
+  font-size: 24px;
   color: black;
 }
 
@@ -61,7 +63,7 @@ textarea {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth hover transition */
+  transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
@@ -73,40 +75,44 @@ textarea {
   font-size: 12px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .contact-form-container {
-    flex-direction: column; /* Stack items vertically */
-    padding: 10px; /* Add spacing for smaller screens */
-    padding-top: 60px; /* Adjust for smaller navbar height */
+    padding: 10px;
+    padding-top: 100px; /* Adjusted for smaller navbar */
   }
 
   .contact-form-wrapper {
     padding: 20px;
-    width: 100%;
-    max-width: 100%; /* Allow full width for smaller screens */
+    width: 90vw;
+    margin-top: 20px; /* Adjusted margin for proper positioning */
   }
 
   .contact-form-wrapper h1 {
-    font-size: 20px; /* Adjust font size for smaller screens */
+    font-size: 20px;
   }
 
   .contact-form-group input,
   .contact-form-group textarea {
-    font-size: 14px; /* Slightly smaller font size */
+    font-size: 14px;
   }
 
   .submit-button {
-    font-size: 14px; /* Adjust button font size */
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
   .contact-form-container {
-    padding: 5px; /* Further reduce padding for very small screens */
+    padding: 5px;
+    padding-top: 110px; /* More space for smaller navbar */
   }
 
   .contact-form-wrapper {
     padding: 15px;
+    width: 90vw;
+    margin-top: 30px; /* Further adjusted */
+    margin-bottom: 30px; /* Prevents bottom cutting */
   }
 
   .contact-form-wrapper h1 {
@@ -115,6 +121,6 @@ textarea {
 
   .submit-button {
     font-size: 12px;
-    padding: 10px; /* Adjust padding for smaller buttons */
+    padding: 10px;
   }
 }
