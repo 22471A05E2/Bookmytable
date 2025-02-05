@@ -1,0 +1,59 @@
+.logout-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+  
+  .logout-box-wrapper {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .logout-box-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+  }
+  
+  .confirm-button,
+  .cancel-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirm-button {
+    background-color: orange;
+    color: #fff;
+  }
+  
+  .confirm-button:hover {
+    background-color: #cc8400;
+  }
+  
+  .cancel-button {
+    background-color: orange;
+    color: #fff;
+  }
+  
+  .cancel-button:hover {
+    background-color: #cc8400;
+  }
+  

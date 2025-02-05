@@ -1,0 +1,81 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-us-page {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Smooth scrolling with snapping */
+  }
+  
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Transparent Content Box */
+  .content-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .content-box h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .content-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Section Backgrounds */
+  .section-1 {
+    background: url("https://images.squarespace-cdn.com/content/v1/5fac753a19904608da14a085/1606268963813-NSC3YINQPJPJ24PCK286/Tacos+%26+Beer+Interior+Vibe") no-repeat center center/cover;
+  }
+  
+  .section-2 {
+    background: url("https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg") no-repeat center center/cover;
+  }
+  
+  .section-3 {
+    background: url("https://assets.bonappetit.com/photos/610aa6ddc50e2f9f7c42f7f8/master/pass/Savage-2019-top-50-busy-restaurant.jpg") no-repeat center center/cover;
+  }
+  
+  .section-4 {
+    background: url("https://media.istockphoto.com/id/666908954/photo/handsome-chef-pouring-olive-oil-on-meal.jpg?s=612x612&w=0&k=20&c=2dU_sMyn3GM2N81m-tMWQ4y5frBp87GQCflUtauJM4k=") no-repeat center center/cover;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .content-box p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-box h2 {
+      font-size: 1.2rem;
+    }
+  
+    .content-box p {
+      font-size: 0.8rem;
+    }
+  }
+  

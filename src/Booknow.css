@@ -1,0 +1,77 @@
+/* BookingForm.css */
+
+/* Set up a full-page container with a background image */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Ensure full height even with scrolling */
+  background: url('https://margauxsrestaurant.com/wp-content/uploads/alex-haney-CAhjZmVk5H4-unsplash-scaled.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: hidden; /* Prevent scroll bars from showing unnecessarily */
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box;
+}
+
+/* Form box styling with transparent background */
+.form-box {
+  background: rgba(255, 255, 255, 0.95); /* Increase opacity for better readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px; /* Slightly reduce max width for better fit */
+  text-align: center;
+}
+
+/* Form title */
+.form-box h2 {
+  margin-bottom: 15px;
+  font-size: 22px; /* Slightly reduce font size */
+  color: #333;
+}
+
+/* Input fields styling */
+.form-box input {
+  width: 100%;
+  padding: 10px; /* Reduce padding for compact size */
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Input focus effect */
+.form-box input:focus {
+  outline: none;
+  border-color: #ff9800;
+  box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+/* Button styling */
+.form-box button {
+  width: 100%;
+  padding: 10px; /* Reduce padding for compact size */
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px; /* Slightly reduce font size */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover effect */
+.form-box button:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0;
+}
