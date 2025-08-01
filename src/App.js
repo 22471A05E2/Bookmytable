@@ -13,7 +13,8 @@ import Logout from './Logout';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Bookmytable">
+
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
