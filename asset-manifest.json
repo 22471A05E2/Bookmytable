@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Bookmytable/static/css/main.d5e7aded.css",
-    "main.js": "/Bookmytable/static/js/main.3145b785.js",
+    "main.js": "/Bookmytable/static/js/main.0dcb47a1.js",
     "static/js/488.3eb2de41.chunk.js": "/Bookmytable/static/js/488.3eb2de41.chunk.js",
     "index.html": "/Bookmytable/index.html",
     "main.d5e7aded.css.map": "/Bookmytable/static/css/main.d5e7aded.css.map",
-    "main.3145b785.js.map": "/Bookmytable/static/js/main.3145b785.js.map",
+    "main.0dcb47a1.js.map": "/Bookmytable/static/js/main.0dcb47a1.js.map",
     "488.3eb2de41.chunk.js.map": "/Bookmytable/static/js/488.3eb2de41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5e7aded.css",
-    "static/js/main.3145b785.js"
+    "static/js/main.0dcb47a1.js"
   ]
 }
